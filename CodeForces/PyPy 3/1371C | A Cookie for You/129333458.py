@@ -1,0 +1,1 @@
+for i in range(int(input())):a,b,n,m=list(map(int,input().split()));temp1=a+b;temp2=n+m;print("YES" if temp1 >= temp2 and m <= min(a,b) else "NO")
