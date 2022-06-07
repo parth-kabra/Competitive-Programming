@@ -1,0 +1,1 @@
+N=int(1e5);x="abcd"*N;print(x[:int(input())])
