@@ -1,0 +1,56 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define endl '\n'
+#define int long long
+#define debug(x...) cerr<<#x<<" = "<<x<<endl;
+void usaco(string filename = ""){
+    if(filename.size() > 0){
+        #ifndef ONLINE_JUDGE
+            freopen((filename + ".in").c_str(), "r", stdin);
+            freopen((filename + ".out").c_str(), "w", stdout);
+        #endif
+    }
+    else{
+        #ifndef ONLINE_JUDGE
+            freopen("input.txt", "r", stdin);
+            freopen("output.txt", "w", stdout);
+            freopen("error.txt", "w", stderr); 
+        #endif
+    }
+}
+void Solve(){
+    int n;
+    cin >> n;
+    vector<pair<int,int>> ar;
+    int res = 0;
+    int curr = 100000000;
+    for(int i = 0 ; i< n ;i++){
+        int a, b;
+        cin >> a >> b;
+        ar.push_back({b,a});
+        curr = min(curr, a);
+    }
+    curr--;
+    sort(ar.begin(), ar.end()); 
+    for(int i=0; i< n;i++){
+        if(ar[i].second > curr){
+            res++;
+            curr = ar[i].first;
+        }
+    }
+    cout << res << endl;
+}
+int32_t main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+ 
+    usaco();
+
+    int t = 1;
+    cin >> t;
+    while(t--){
+        Solve();
+    }
+ 
+    return 0;
+}
