@@ -1,0 +1,2 @@
+#include<bits/stdc++.h>
+using namespace std;typedef long long ll;int main(){int t;cin>>t;while(t--){int q,p;cin>>q>>p;double ans;if(q>=1000){ans=(q*p)-((q*p)*0.1);}else{ans=q*p;}cout<<fixed<<setprecision(6)<<ans<<endl;}return 0;}
