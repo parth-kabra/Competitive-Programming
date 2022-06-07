@@ -1,0 +1,2 @@
+n =. > 0 ". each cutopen toJ stdin ''
+echo 1 + (n * (n + 1)) % 2
