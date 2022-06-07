@@ -1,0 +1,3 @@
+for i in range(int(input())):
+    n=int(input())
+    print(2**(n-1)%1000000007)# cook your dish here
