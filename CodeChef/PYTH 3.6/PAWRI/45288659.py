@@ -1,0 +1,1 @@
+for i in range(int(input())):s=str(input());s=s.replace("party","pawri");print(s);
