@@ -1,0 +1,2 @@
+#include<bits/stdc++.h>
+using namespace std;int main(){int a;double t;cin>>a>>t;if (a%5==0){if(a + 0.50<=t){cout<<fixed<<setprecision(2)<<(t-a)-0.50<<endl;}else{cout<<fixed<<setprecision(2)<<t<<endl;}}else{cout<<fixed<<setprecision(2)<<t<<endl;}return 0;}
