@@ -16,6 +16,7 @@ template<class T> bool ckmax(T& a, const T& b) { return a < b ? a = b, 1 : 0; }
 #define endl '\n'
 #define int long long
 #define debug(x...) cerr<<#x<<" = "<<x<<endl;
+
 void usaco(string filename = ""){
     if(filename.size() > 0){
         #ifndef ONLINE_JUDGE
