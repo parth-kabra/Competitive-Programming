@@ -1,10 +1,13 @@
 import os
 
-folder = input("Enter folder name (A new folder will be created to upload files): ")
+folder = input("Enter folder name (Enter new or existing folder name): ")
 
-os.mkdir(folder)
+try:
+    os.mkdir(folder)
+except:
+    pass
 
-i = 1
+i = int(input("Enter starting day: "))
 while True:
     name = input("problem name: ")
     if(name == "jai shree ram"):
